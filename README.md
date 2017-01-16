@@ -2,11 +2,11 @@
 
 ## Welcome
 
-This is an Open-source code to take as base for any flavor of the classic Chess. You can use it for any personal or comercial project.
+This is an Open-source code to take as base for any flavor of the classic Chess. You can use it for any personal or commercial project.
 
 ## Plug and Play
 
-The project is ready to run in Android, iOS, Desktop and Web. To achieve this the project is built in Java usign LibGDX to port the app for all the mentioned platforms.
+The project is ready to run in Android, iOS, Desktop and Web. To achieve this the project is built in Java using LibGDX to port the app for all the mentioned platforms.
 
 ## Import and Run
 
