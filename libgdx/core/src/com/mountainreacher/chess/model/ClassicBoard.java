@@ -129,8 +129,9 @@ public class ClassicBoard implements IBoard {
 
                 // Closeness with the other king
                 if (piece.getFigure() == Piece.KING) {
-                    if (Math.sqrt(Math.pow(piece.getRow() - row, 2)
-                            + Math.pow(piece.getColumn() - column, 2)) < 2) {
+                    int rowDistance = Math.abs(piece.getRow() - row);
+                    int columnDistance = Math.abs(piece.getColumn() - column);
+                    if(Math.max(rowDistance, columnDistance) < 2) {
                         return piece;
                     }
                 }
