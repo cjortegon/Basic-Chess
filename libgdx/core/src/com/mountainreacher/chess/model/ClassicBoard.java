@@ -121,7 +121,7 @@ public class ClassicBoard implements IBoard {
         }
         return null;
     }
-    
+
     protected Piece kingIsInDanger(int kingTeam, int row, int column) {
         Gdx.app.log(TAG, "Checking king " + kingTeam + "(" + row + "," + column + ")");
         for (Piece piece : pieces) {
@@ -129,11 +129,11 @@ public class ClassicBoard implements IBoard {
 
                 // Closeness with the other king
                 if (piece.getFigure() == Piece.KING) {
-		    int rowDistance = Math.abs(piece.getRow() - row);
-		    int columnDistance = Math.abs(piece.getColumn() - column);
-		    if(Math.max(rowDistance, columnDistance) < 2) {
+                    int rowDistance = Math.abs(piece.getRow() - row);
+                    int columnDistance = Math.abs(piece.getColumn() - column);
+                    if(Math.max(rowDistance, columnDistance) < 2) {
                         return piece;
-		    }
+                    }
                 }
 
                 // The other figure types
